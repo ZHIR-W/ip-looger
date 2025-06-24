@@ -1,5 +1,5 @@
 import { headers } from 'next/headers';
-import { db } from '@/lib/firebase';
+import { db } from '../../../lib/firebase'; // ✅ Relative path
 import { collection, addDoc } from 'firebase/firestore';
 
 export async function GET() {
